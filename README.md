@@ -81,7 +81,7 @@ docker run -d --name bot \
 -e MP_APPSECRET= \
 -e MP_TOKEN= \
 -e DEFAULT_API_URL=https://oa.api2d.net \
--e DEFAULT_API_WORD= \  
+-e DEFAULT_API_WORD= \
 -e DEFAULT_API_KEY=fk... \
 -e LOCK_API_URL=true \
 -e LOCK_API_KEY=true \
@@ -156,7 +156,7 @@ docker-compose up -d
 - MAX_TOKEN=1000 #返回的最大token数
 - TEMPERATURE=0.8 #模型的temperature
 - TIMEOUT=180 #超时秒数
-- STREAM=true #是否采用流式传输 
+- STREAM=true #是否采用流式传输
 ```
 
 ### AZURE 支持
@@ -190,7 +190,7 @@ node18
 yarn add api2d body-parser cors cross-fetch dotenv express express-xml-bodyparser knex mysql2 simple-json-db
 ```
 
-node16.13.1 
+node16.13.1
 
 ```bash
 yarn add api2d body-parser cors cross-fetch dotenv express express-xml-bodyparser knex mysql2@3.0.1 simple-json-db
@@ -229,4 +229,3 @@ CREATE TABLE `data` (
 ```yml
 - DB_TYPE=mysql2
 ```
-
